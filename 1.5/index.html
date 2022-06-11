@@ -12,14 +12,19 @@
     <link
     rel="stylesheet"
     href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
-    <script src="script.js"></script>
+    
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js" defer></script>
+    <script src="script.js" defer></script>
 
 </head>
 <body>
     <div class="wrapper-header">
         <h1 class="wrapper-header__title">Ремонт техники различных брендов</h1>
     </div>
+
+        
+
+
     <main>
         <div class="labels">
             <div class="labels__swiper-wrapper">
@@ -36,7 +41,41 @@
                 <img src="ringo2.svg" alt="apple logo" class="labels__apple">
             </div>
 
+
+
+        </div> 
+
+
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="lenovo.svg" alt="lenovo logo" class="labels__lenovo"></div>
+            <div class="swiper-slide"><img src="samsung.svg" alt="samsung logo" class="labels__samsung"></div>
+            <div class="swiper-slide"><img src="ringo.svg" alt="apple logo" class="labels__apple"></div>
+            <div class="swiper-slide"><img src="viewSonic.svg" alt="view sonic logo" class="labels__view-sonic"></div>
+            <div class="swiper-slide"><img src="bosch.svg" alt="bosch logo" class="labels__bosch"></div>
+            <div class="swiper-slide"><img src="hp.svg" alt="hp logo" class="labels__hp"></div>
+            <div class="swiper-slide"><img src="acer.svg" alt="acer logo" class="labels__acer"></div>
+            <div class="swiper-slide"><img src="sony.svg" alt="sony logo" class="labels__sony"></div>
+            <div class="swiper-slide"><img src="lenovo.svg" alt="lenovo logo" class="labels__lenovo"></div>
+            <div class="swiper-slide"><img src="samsung2.svg" alt="samsung logo" class="labels__samsung2"></div>
+            <div class="swiper-slide"><img src="ringo2.svg" alt="apple logo" class="labels__apple"></div>
+            
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+        
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
         </div>
+        
+
+
         <button class="btn">
             <img src="expand.svg" alt="expand logo" class="btn__expand">
             <span class="btn__text">Показать все</span>
