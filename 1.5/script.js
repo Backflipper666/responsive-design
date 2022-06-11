@@ -38,7 +38,26 @@ let sony = document.querySelector("img.labels__sony");
 
 
 if ($(window).width() > 767 && $(window).width() <= 1199 ) {
-  console.log("tablets");
+  button.addEventListener("click", ()=>{
+    if (text.textContent == "Скрыть"){
+      lenovo2.setAttribute("style", "visibility:hidden; display:none;");
+      apple2.setAttribute("style", "visibility:hidden; display:none;");
+      samsung2.setAttribute("style", "visibility:hidden; display:none;");
+      viewSonic.setAttribute("style", "visibility:hidden; display:none;");
+      sony.setAttribute("style", "visibility:hidden; display:none;");
+      expand.setAttribute("style", "transform:rotate(180deg);")
+      text.textContent = "Показать все";
+    }
+    else{
+      lenovo2.setAttribute("style", "visibility:visible; display:inline-block;");
+      apple2.setAttribute("style", "visibility:visible; display:inline-block;");
+      samsung2.setAttribute("style", "visibility:visible; display:inline-block;");
+      viewSonic.setAttribute("style", "visibility:visible; display:inline-block;");
+      sony.setAttribute("style", "visibility:visible; display:inline-block;");
+      expand.setAttribute("style", "transform:rotate(360deg);")
+      text.textContent = "Скрыть";
+    }
+  })
 }
 else if ($(window).width() >= 1200){
   button.addEventListener("click", ()=>{
