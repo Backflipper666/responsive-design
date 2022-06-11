@@ -1,7 +1,53 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
 .wrapper-header__title{
     font-size: 16px;
     font-family: "TT Lakes",serif;
     font-weight: normal;
     text-transform: uppercase;
     @font-face {font-family: "TT Lakes"; src: url("/TT-Lakes-Font/TT Lakes Medium.otf");} 
+}
+
+.wrapper-header__title{
+    color:#7e7e82;
+    margin-bottom: 40px;
+    margin-top: 30px;
+    margin-left: 15px;
+
+}
+button.btn{
+    border: none;
+    outline: none;
+    padding:0;
+    border-image: none;
+    background-color: #fff;
+}
+
+.btn__wrapper{
+    background-color: #fff;
+    border: none;
+    outline: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    margin-left: 15px;
+    
+
+    
+}
+
+
+.btn__expand, .btn__text{
+    padding: none;
+}
+
+.labels{
+    margin-bottom: 20px;
+    margin-left: 15px;
 }

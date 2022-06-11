@@ -6,3 +6,7 @@
     display: none;
     visibility: hidden;
 }
+.swiper-wrapper{
+    margin-left: 20px;
+    margin-bottom: 40px;
+}
