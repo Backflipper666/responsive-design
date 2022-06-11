@@ -29,23 +29,33 @@ let samsung2 = document.querySelector("img.labels__samsung2");
 let expand = document.querySelector("img.btn__expand");
 let text = document.querySelector("span.btn__text");
 
+//setting variables for tablet version
+let viewSonic = document.querySelector("img.labels__view-sonic");
+let sony = document.querySelector("img.labels__sony");
 
 
-button.addEventListener("click", ()=>{
-  if (text.textContent == "Скрыть"){
-    lenovo2.setAttribute("style", "visibility:hidden; display:none;");
-    apple2.setAttribute("style", "visibility:hidden; display:none;");
-    samsung2.setAttribute("style", "visibility:hidden; display:none;");
-    expand.setAttribute("style", "transform:rotate(180deg);")
-    text.textContent = "Показать все";
-  }
-  else{
-    lenovo2.setAttribute("style", "visibility:visible; display:inline-block;");
-    apple2.setAttribute("style", "visibility:visible; display:inline-block;");
-    samsung2.setAttribute("style", "visibility:visible; display:inline-block;");
-    expand.setAttribute("style", "transform:rotate(360deg);")
-    text.textContent = "Скрыть";
-  }
-})
 
+
+
+if ($(window).width() > 767 && $(window).width() <= 1199 ) {
+  console.log("tablets");
+}
+else if ($(window).width() >= 1200){
+  button.addEventListener("click", ()=>{
+    if (text.textContent == "Скрыть"){
+      lenovo2.setAttribute("style", "visibility:hidden; display:none;");
+      apple2.setAttribute("style", "visibility:hidden; display:none;");
+      samsung2.setAttribute("style", "visibility:hidden; display:none;");
+      expand.setAttribute("style", "transform:rotate(180deg);")
+      text.textContent = "Показать все";
+    }
+    else{
+      lenovo2.setAttribute("style", "visibility:visible; display:inline-block;");
+      apple2.setAttribute("style", "visibility:visible; display:inline-block;");
+      samsung2.setAttribute("style", "visibility:visible; display:inline-block;");
+      expand.setAttribute("style", "transform:rotate(360deg);")
+      text.textContent = "Скрыть";
+    }
+  })
+}
 
